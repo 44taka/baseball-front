@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    container_name: baseball-front.app
+    volumes:
+      - ./app:/app
+    ports:
+      - "3000:3000"
+    tty: true
+    networks:
+      - baseball-api_default
+
+networks:
+  baseball-api_default:
+    external: true
