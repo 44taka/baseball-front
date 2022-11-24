@@ -5,7 +5,7 @@ import {WinLossDepositApi} from '../infrastructure/api/win_loss_deposit';
 import {DepositChartUseCase} from '../usecase/deposit_chart';
 
 
-export default function Home({central_league, pacific_league}) {
+export default function Home({central_league, pacific_league}: { central_league: any, pacific_league: any }) {
     const [centralLeagueChart, setCentralLeagueChart] = useState(central_league);
     const [pacificLeagueChart, setPacificLeagueChart] = useState(pacific_league);
     const [searchTerm, setSearchTerm] = useState(0)

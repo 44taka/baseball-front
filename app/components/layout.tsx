@@ -3,7 +3,7 @@ import Footer from './footer'
 import Head from 'next/head'
 
 
-export default function Layout({children}) {
+export default function Layout({children}: { children: any }) {
     return (
         <>
             <Head>

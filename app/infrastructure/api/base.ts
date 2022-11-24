@@ -9,7 +9,7 @@ export class BaseApi {
             // baseURL: (ssr_flg) ? 'http://172.25.0.2:8000' : 'http://localhost:8000',
             baseURL: 'https://baseball-api.dosankoweb.work',
             responseType: 'json',
-            ContentType: 'application/json',
+            // ContentType: 'application/json',
         });
     }
 }
