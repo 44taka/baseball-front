@@ -22,7 +22,7 @@ ChartJS.register(
 );
 
 
-export default function LineChart({options, data}) {
+export default function LineChart({options, data}: { options: any, data: any }) {
     return (
         <div className="card" style={{marginBottom: '1.5rem'}}>
             <div className="card-content">
